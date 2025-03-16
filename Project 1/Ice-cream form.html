@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Ice creamflavors </title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Ice cream flavors</h1>
+    <p id="description"> What's your favorite flavor? We want to know everything about your type of ice-cream
+    <form id="survey-form" method="post" action='SOMETHING'>
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input id="name" name="first-name" type="text" placeholder="Bernardo..."required /></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="example@example.pt"required /></label>
+        <label for="number" id="number-label">Enter Your Number: <input id="number" name="number" type="number" min="5" max="9" placeholder="96..." required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="gender-male"><input id="gender-male" type="radio" name="gender" class="inline" value="gender" checked /> Male</label>
+        <label for="gender-female"><input id="gender-female" type="radio" name="gender" class="inline" value="gender" /> Female</label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">Please choose one flavour:
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Chocolate</option>
+            <option value="2">Vanilla</option>
+          </select>
+        </label>
+        <label for="other">Other:
+          <textarea id="other" name="other" rows="3" cols="30"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>How do you like to eat it?</legend>
+        <label for="cone"> <input class="inline" id="cone" value="cone" name="cone" type="checkbox" /> Cone</label>
+        <label for="glass"> <input class="inline" id="glass" value="glass" name="glass" type="checkbox" /> Glass</label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
+  
